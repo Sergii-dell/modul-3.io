@@ -1,0 +1,151 @@
+
+/*  визуальное  прятанье  */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+
+
+/* Общие  стили */
+
+body{      
+    font-family: 'Playfair Display', serif;         /* подключаем  шрифт */  
+}
+
+img{
+    display: block;
+    margin-bottom: 27px;
+}
+
+      /*  оформление  обертки   */
+      .container{
+        width: 900px;              /* ширина  контейнера */
+        margin: 0 auto;           /* по  вертикали  ноль  по  ширине  авто  */
+    }
+
+    /* Стили  для  хедер  */
+.page-header {
+     padding-top: 72px; 
+     padding-bottom: 98px; 
+}
+
+.site-navigation{
+    font-size: 0;      
+    text-align: center;   /*  распологаем  по  центру  */
+} 
+
+.site-navigation li{
+   display: inline-block;  /* выстраеваем  в  ряд  список  */
+   list-style: none;     /*  убераем  оформление  списка  ( точки )  */
+     
+}
+
+.site-navigation li:not(:last-child){
+    margin-right: 103px;                    /* задайом  отступ  в  верхнем  меню */
+} 
+
+.site-navigation a{
+    display: block;               /*  указиваем  ка  блочные  елементы */
+  color: #626262;                 /*  цвет  текста  */
+  font-weight: 400;                  /* жирность  */
+  text-transform: uppercase ;       /*  зделать  текст  с  большой  буквой  */
+  text-decoration: none ;              /*  убераем  подчеркивание  */
+    font-size: 14px;                               /* размер  шрифта  текста  */
+    line-height: 24px;                              /*  размер  строковой  линии  */
+   
+}
+
+.site-navigation a:hover,      /*  задайом  цвет  при  наведении  на  сылку  */
+.site-navigation a:focus{      /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+    color: #44b6f5;
+}
+
+
+/* основной  контент */
+
+.features{
+    padding-bottom: 70px;
+}
+
+.features-list{          /*  обнуляем  марджин  и  падинг  для  списка  */
+    list-style: none;     /*  убераем  оформление  списка  ( точки )  */
+   margin: 0;          
+    padding: 0;
+    font-size: 0;
+    padding-bottom: 52px; 
+}
+
+.features-list-item{
+    color: #626262 ;                            /* задайом  цвет  текста  */
+    display: inline-block;
+    margin-right: 60px;       /* правый  отступ  первого, третего, пятого блока */
+    width: 420px;              /*  размер  по  ширине  блока  контента */
+    margin-bottom: 130px;
+    padding: 0 0px;            /*  падинг  обнуляем  */
+}
+  
+.features-list-item:nth-child(2n){           /* два  в  колекции  */
+    margin-right: 0;        /*  обнуляем  левый  марджин  */
+}
+
+.features-list-item:nth-last-child(-n+2){       /* два  в  колекции  */
+    margin-bottom: 0;                         /*  обнуляем  нижний  марджин  */
+}
+
+ .features-list-item h2{
+     margin-bottom: 33px;
+    color: #2d3033 ;       /*   задайом  цвет  для  заголовков  верхнего  списка   */
+    line-height: 36px;         /*  размер  строковой  линии  */
+    font-size: 30px;          /*  размер  шрифта  задайом  */
+    font-weight: 700;                  /* жирность  */
+ }
+   
+ .features-list-item p{
+   
+    font-size: 14px;                               /* размер  шрифта  текста  */
+    line-height: 24px;                              /*  размер  строковой  линии  */
+
+    
+  }  
+
+  .features-list-col{     /*  задайом  цвет  определеному  тексту  */
+    color: #c7c1b6;
+    text-transform: uppercase ;   /*  зделать  текст  с  большой  буквой  */
+    font-size: 14px;                               /* размер  шрифта  текста  */
+    margin-bottom: 28px;
+  }
+ 
+
+
+   .download-button{        /*  оформление  кнопки  */
+
+       margin-left: 368px;        /*  выравниваем  по  центру  кнопку  */ 
+       text-align: center;      /* размещяем  по  центру  кнопку  */
+       width: 164px;                 /* ширина  контейнера  */
+       height: 60px;                 /* высота  контейнера  */   
+       font-size: 20px;            /*  размер  шрифта  */
+       line-height: 24px;          /*  размер  строковой  линии  */
+       font-weight: 400;              /* жирность  шрифта  */
+       color: #626262;            /*  цвет  текста  */
+       cursor: pointer;             /*  ефект  наведения  */
+       background-color: #ffffff;   /*  задайом  фон  внутри   */
+       border: 1px solid #626262;    /*  задайом  бордер в  один пиксель с черной окраской  */    
+
+   }
+
+   .download-button:hover,     /*  задайом  цвет  при  наведении  на  сылку  */
+   .download-button:focus{         /*  задайом  цвет  при    перемещении  клавиатурой  таб  */
+    color: #ffffff;
+    background-color: #000000;
+   }
